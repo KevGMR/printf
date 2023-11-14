@@ -1,14 +1,15 @@
 #include "main.h"
-/**
- * print_char - prints a character
- * @args: arguments
- * Return: 1
- */
-int print_char(va_list args)
-{
-	char str;
 
-	str = va_arg(args, int);
-	_putchar(str);
+/**
+ * print_c - prints a character.
+ * @val: arguments.
+ * Return: integer.
+ */
+int print_c(va_list val)
+{
+	char s;
+
+	s = va_arg(val, int);
+	_putchar(s);
 	return (1);
 }
